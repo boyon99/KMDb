@@ -12,7 +12,7 @@ fetch(url)
   .then(response => response.json())
   .then(function (item) { 
     // api를 리스트에 담기
-    search_movie_list = item
+    let search_movie_list = item
     console.log(item)
     console.log(item.Data)
     console.log(item.Data[0].Result[0])
